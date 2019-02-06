@@ -8,6 +8,7 @@ bot.on("ready",async ()=> {
 });
 
 bot.on("message", async message => {
+	if(message.author.bot)return;
 	let prefix = "!";
 	let messageArray = message.content.split(" ");
 
