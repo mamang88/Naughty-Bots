@@ -12,9 +12,8 @@ bot.on("message", async message => {
 	let prefix = "!";
 	let messageArray = message.content.split(" ");
 
-	//return message.channel.send(messageArray[0]+ "\n" + messageArray[1]+ "\n" +messageArray[2]);
 	if(messageArray[0] == prefix+"sig"){
-		https://www.novaragnarok.com/ROChargenPHP/newsig/
+		return message.channel.send("[url=http://www.novaragnarok.com][img=http://www.novaragnarok.com/ROChargenPHP/newsig/NameHere/1/1][/url]");
 
 	}
 });
