@@ -7,4 +7,11 @@ bot.on("ready",async ()=> {
 	bot.user.setActivity("From tohir Computer", {type: "WATCHING"});
 });
 
+bot.on("message", async message => {
+	let prefix = "!";
+	let messageArray = message.content.split(" ");
+
+	return message.channel.send(messageArray[0]);
+});
+
 bot.login("NTMzODA4NjQyMjkwNjE0Mjgy.DzxZyg._al-LfwujpOUY_h4A6I8azz1nbI");
