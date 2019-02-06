@@ -12,7 +12,11 @@ bot.on("message", async message => {
 	let prefix = "!";
 	let messageArray = message.content.split(" ");
 
-	return message.channel.send(messageArray[0]+ "\n" + messageArray[1]+ "\n" +messageArray[2]);
+	//return message.channel.send(messageArray[0]+ "\n" + messageArray[1]+ "\n" +messageArray[2]);
+	if(messageArray[0] == prefix+"sig"){
+		https://www.novaragnarok.com/ROChargenPHP/newsig/
+
+	}
 });
 
-bot.login("NTMzODA4NjQyMjkwNjE0Mjgy.DzxZyg._al-LfwujpOUY_h4A6I8azz1nbI");
+bot.login("process.env.TOKEN");
