@@ -15,13 +15,13 @@ bot.on("message", async message => {
 
 	if(messageArray[0] == prefix+"sig"){
 		let args = messageArray.slice(1);
-		let bicon= bot.user.displayAvatarURL;
     let charname=querystring.escape(args.join(" "));
     let number1= Math.floor(Math.random() * 11) + 1;
     let number2=Math.floor(Math.random() * 11) + 1;
     let url="https://www.novaragnarok.com/ROChargenPHP/newsig/" + charname + "/" + number1 +"/"+number2;
     let botembed = new Discord.RichEmbed()
     .setDescription("Characther card")
+		.setThumbnail("www.novaragnarok.com/themes/nova/img/img/logo_new_.png");
     .setImage(url);
     return message.channel.send(botembed);
 
