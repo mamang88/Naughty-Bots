@@ -23,6 +23,7 @@ bot.on("message", async message => {
     .setDescription("Characther card")
     .setImage(url);
     return message.channel.send(botembed);
+		
 	}
 });
 
