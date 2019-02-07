@@ -21,7 +21,7 @@ bot.on("message", async message => {
     let url="https://www.novaragnarok.com/ROChargenPHP/newsig/" + charname + "/" + number1 +"/"+number2;
     let botembed = new Discord.RichEmbed()
     .setDescription("Characther card")
-		.setThumbnail("www.novaragnarok.com/themes/nova/img/img/logo_new_.png");
+		.setThumbnail("www.novaragnarok.com/themes/nova/img/img/logo_new_.png")
     .setImage(url);
     return message.channel.send(botembed);
 
