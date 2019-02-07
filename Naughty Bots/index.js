@@ -20,8 +20,8 @@ bot.on("message", async message => {
     let number2=Math.floor(Math.random() * 11) + 1;
     let url="https://www.novaragnarok.com/ROChargenPHP/newsig/" + charname + "/" + number1 +"/"+number2;
     let botembed = new Discord.RichEmbed()
-    .setDescription("Characther card")
-		.setThumbnail("https://www.novaragnarok.com/themes/nova/img/img/logo_new_.png/")
+    .setDescription("Character card")
+		.setThumbnail("https://images-ext-2.discordapp.net/external/b-E8mrzqz8625X090AnjZsmQkeuCxh6fiaYbP0jYLKs/https/www.novaragnarok.com/themes/nova/img/img/logo_new_.png")
     .setImage(url);
     return message.channel.send(botembed);
 
