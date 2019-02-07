@@ -13,8 +13,16 @@ bot.on("message", async message => {
 	let messageArray = message.content.split(" ");
 
 	if(messageArray[0] == prefix+"sig"){
-		return message.channel.send("[url=http://www.novaragnarok.com][img=http://www.novaragnarok.com/ROChargenPHP/newsig/NameHere/1/1][/url]");
-
+		let args = messageArray.slice(1);
+		let bicon= bot.user.displayAvatarURL;
+    let charname=querystring.escape(args);
+    let number1= Math.floor(Math.random() * 12) + 1;
+    let number2=Math.floor(Math.random() * 12) + 1;
+    let url="https://www.novaragnarok.com/ROChargenPHP/newsig/" + charname + "/" + number1 +"/"+number2;
+    let botembed = new Discord.RichEmbed()
+    .setDescription("Characther card")
+    .setImage(url);
+    return message.channel.send(botembed);
 	}
 });
 
