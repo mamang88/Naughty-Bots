@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
+const querystring = require("querystring");
 
 bot.on("ready",async ()=> {
 	console.log(`[Start] ${new Date()}`);
@@ -23,7 +24,7 @@ bot.on("message", async message => {
     .setDescription("Characther card")
     .setImage(url);
     return message.channel.send(botembed);
-		
+
 	}
 });
 
