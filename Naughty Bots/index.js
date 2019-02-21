@@ -8,6 +8,26 @@ bot.on("ready",async ()=> {
 	bot.user.setActivity("From tohir Computer", {type: "WATCHING"});
 });
 
+bot.on("guildMemberAdd", (member)=>{
+  //add role klo mw diaktifin apus "//" atau "/*" & "*/"
+  /*
+  var role=member.guild.role("name", "namarolenya");
+  member.addRole(role);
+  */
+
+  //kirim pesan ke channel tertentu
+  var channel =member.guild.channels.find("name","welcome");
+  if(channel)channel.send(`welcome ${member} to wkwkwk land`);
+
+})
+bot.on("guildMemberRemove", (member)=>{
+
+  //kirim pesan ke channel tertentu
+  var channel =member.guild.channels.find("name","welcome");
+  if(channel)channel.send(Bye bitch ${member});
+
+})
+
 bot.on("message", async message => {
 	if(message.author.bot)return;
 	let prefix = "!";
