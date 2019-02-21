@@ -16,8 +16,8 @@ bot.on("guildMemberAdd", async member =>{
   */
 
   //kirim pesan ke channel tertentu
-  var channel = member.guild.channels.find(`name`,"welcome");
-  if(channel)channel.send(`welcome ${member} to wkwkwk land`);
+	var channel = member.guild.channels.find(`name`,"welcome");
+  if(channel)channel.send(`halo bitch ${member}`);
 
 });
 bot.on("guildMemberRemove",async member=>{
