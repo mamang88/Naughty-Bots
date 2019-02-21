@@ -19,14 +19,14 @@ bot.on("guildMemberAdd", (member)=>{
   var channel =member.guild.channels.find("name","welcome");
   if(channel)channel.send(`welcome ${member} to wkwkwk land`);
 
-})
+});
 bot.on("guildMemberRemove", (member)=>{
 
   //kirim pesan ke channel tertentu
   var channel =member.guild.channels.find("name","welcome");
   if(channel)channel.send(Bye bitch ${member});
 
-})
+});
 
 bot.on("message", async message => {
 	if(message.author.bot)return;
