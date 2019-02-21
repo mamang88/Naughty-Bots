@@ -24,7 +24,7 @@ bot.on("guildMemberRemove",async member=>{
 
   //kirim pesan ke channel tertentu
   var channel = member.guild.channels.find(`name`,"welcome");
-  if(channel)channel.send('Bye bitch ${member}');
+  if(channel)channel.send(`Bye bitch ${member}`);
 
 });
 
